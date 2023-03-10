@@ -34,8 +34,8 @@ Output table
 7| TRUE    TRUE  TRUE   FALSE  FALSE  FALSE   FALSE     TRUE
 
 Input sequence for the about input/ output will be
-> python index.py
-> Enter number of columns to code: 2
-> Enter column number to code: 3
-> Enter column number tocode: 6
+python index.py
+Enter number of columns to code: 2
+Enter column number to code: 3
+Enter column number tocode: 6
 

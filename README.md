@@ -13,25 +13,28 @@ Example:
 
 Input table
 
- |    B|       C               |D    E   F
-1|    2|      dog,cat,mice     |4    5   rice,veg
-2|    9|     tiger,cat,mice    |4    5   meat,veg
-3|    3|      lion             |4    5   rice
-4|    4|      cat              |4    5   rice
-5|    5|     mice              |4    5   meat,veg
-6|    8|     dog,cat,mice      |4    5   veg
-7|    6|      dog,cat,mice     |4    5   veg
+
+| | B|       C           |D |E |     F         |
+|-|--|-------------------|--|--|---------------|
+|1|2 |  dog,cat,mice     |4 |5 |   rice,veg    |
+|2|9 |  tiger,cat,mice   |4 |5 |   meat,veg    |
+|3|3 |  lion             |4 |5 |   rice        |
+|4|4 |  cat              |4 |5 |   rice        |
+|5|5 |  mice             |4 |5 |   meat,veg    |
+|6|8 |  dog,cat,mice     |4 |5 |   veg         |
+|7|6 |  dog,cat,mice     |4 |9 |   veg         |
 
 Output table 
 
- | dog    cat    mice   tiger   lion    rice   meat    veg
-1| TRUE   TRUE   TRUE   FALSE   FALSE   TRUE   FALSE    TRUE
-2| FALSE  TRUE   TRUE   TRUE   FALSE   FALSE   TRUE     TRUE
-3| FALSE  FALSE  FALSE  FALSE  TRUE   TRUE    FALSE    FALSE
-4| FALSE  TRUE   FALSE  FALSE  FALSE   TRUE   FALSE     FALSE
-5| FALSE  FALSE  TRUE   FALSE  FALSE  FALSE    TRUE     TRUE
-6| TRUE    TRUE  TRUE   FALSE  FALSE  FALSE   FALSE     TRUE
-7| TRUE    TRUE  TRUE   FALSE  FALSE  FALSE   FALSE     TRUE
+| | dog  |    cat |    mice |   tiger |   lion |    rice |   meat |   veg |
+|-| -----|--------|---------|---------|--------|---------|--------|-------|
+|1| TRUE |  TRUE |  TRUE |  FALSE |  FALSE |  TRUE |  FALSE |   TRUE |
+|2| FALSE| TRUE  |TRUE   |TRUE   | FALSE   |FALSE  |TRUE    | TRUE |
+|3| FALSE|  FALSE|  FALSE | FALSE | TRUE   |TRUE   | FALSE  |  FALSE|
+|4| FALSE|  TRUE |  FALSE | FALSE | FALSE  | TRUE  | FALSE  |   FALSE|
+|5| FALSE|  FALSE|  TRUE  | FALSE | FALSE  |FALSE  |  TRUE  |   TRUE|
+|6| TRUE |   TRUE|  TRUE  | FALSE | FALSE  |FALSE  | FALSE  |   TRUE|
+|7| TRUE |   TRUE|  TRUE  | FALSE | FALSE  |FALSE  | FALSE  |   TRUE|
 
 Input sequence for the about input/ output will be
 1) python index.py
